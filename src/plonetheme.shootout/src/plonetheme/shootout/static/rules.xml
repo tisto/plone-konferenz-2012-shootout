@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules
+  xmlns="http://namespaces.plone.org/diazo"
+  xmlns:css="http://namespaces.plone.org/diazo/css"
+  xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+  <theme
+    href="http://t3dd12.typo3.org/index.php"
+    css:if-content="#visual-portal-wrapper" />
+
+  <replace
+    css:content-children="#content"
+    css:theme-children="#c26 .module-1 .moduleBody" />
+
+<!--
+  <replace
+    css:content-children="#portal-globalnav"
+    css:theme-children="#globalMenu" />
+-->
+
+  <notheme css:if-content="#document-base-edit" />
+
+  <before css:theme-children="body" css:content="#plone-cmsui-trigger" />
+
+</rules>

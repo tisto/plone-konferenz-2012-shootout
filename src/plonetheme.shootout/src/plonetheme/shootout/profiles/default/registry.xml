@@ -1,0 +1,8 @@
+<registry>
+  <record field="absolutePrefix" interface="plone.app.theming.interfaces.IThemeSettings">
+    <value>http://t3dd12.typo3.org/</value>
+  </record>
+  <record interface="plone.app.theming.interfaces.IThemeSettings" field="readNetwork">
+    <value>true</value>
+  </record>
+</registry>
