@@ -18,6 +18,10 @@
     css:theme-children="#globalMenu" />
 -->
 
+  <replace
+    css:content-children="#portal-footer p"
+    css:theme-children="#footerCopyright" />
+
   <notheme css:if-content="#document-base-edit" />
 
   <before css:theme-children="body" css:content="#plone-cmsui-trigger" />
