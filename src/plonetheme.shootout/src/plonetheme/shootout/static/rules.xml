@@ -9,15 +9,20 @@
     href="http://t3dd12.typo3.org/index.php"
     css:if-content="#visual-portal-wrapper" />
 
+  <!-- CONTENT -->
+  <replace
+    css:content-children="#content"
+    css:theme-children="#c26 .module-1 .moduleBody" />
+
   <!-- BREADCRUMBS -->
   <replace
     css:content-children="#portal-breadcrumbs"
     css:theme-children="#breadcrumbs" />
 
-  <!-- CONTENT -->
-  <replace
-    css:content-children="#content"
-    css:theme-children="#c26 .module-1 .moduleBody" />
+  <!-- EDIT -->
+  <prepend
+    css:content="#contentview-edit"
+    css:theme="#c26 .module-1 .moduleBody" />
 
   <!-- FOOTER -->
   <replace
