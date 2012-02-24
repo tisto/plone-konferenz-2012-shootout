@@ -4,14 +4,22 @@
   xmlns:css="http://namespaces.plone.org/diazo/css"
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
+  <!-- TYPO3 DD THEME -->
   <theme
     href="http://t3dd12.typo3.org/index.php"
     css:if-content="#visual-portal-wrapper" />
 
+  <!-- BREADCRUMBS -->
+  <replace
+    css:content-children="#portal-breadcrumbs"
+    css:theme-children="#breadcrumbs" />
+
+  <!-- CONTENT -->
   <replace
     css:content-children="#content"
     css:theme-children="#c26 .module-1 .moduleBody" />
 
+  <!-- FOOTER -->
   <replace
     css:content-children="#portal-footer p"
     css:theme-children="#footerCopyright" />
